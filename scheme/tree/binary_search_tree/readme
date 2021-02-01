@@ -1,0 +1,5 @@
+functional search-tree insert, search, delete, print 
+RUN
+______________
+guile tree.scm
+______________
