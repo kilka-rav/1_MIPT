@@ -1,0 +1,10 @@
+calc in polish notification
+RUN
+_____________________________
+nasm -f elf64 calc.nasm
+gcc -static -o calc calc.o 
+./calc
+_____________________________
+Example: 
+2 pi * cos sin = sin(cos(2pi))
+Func: ln, lg, sin, cos, tg, ctg, ^, sqrt, +, -, *, /, load pi

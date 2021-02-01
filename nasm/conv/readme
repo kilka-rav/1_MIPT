@@ -1,0 +1,7 @@
+translate number from a_system to b_system in infinity loop. a, b <= 62. Enter a or b > 62 for exit.
+RUN
+_________________
+nasm -f elf64 -o conv.o conv.asm 
+ld -o conv conv.o 
+./conv
+________________
