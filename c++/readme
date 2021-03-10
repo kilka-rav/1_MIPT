@@ -1,0 +1,6 @@
+Counter of Iosif.
+RUN:
+____________________
+g++ list.cpp -o list
+./list
+____________________
