@@ -56,9 +56,12 @@ bool List::check_ios() const {
     Node* rabbit2;
     rabbit1 = head;
     rabbit2 = head;
-    while( rabbit2->next->next != nullptr ) {
+    while( rabbit2->next != nullptr ) {
         rabbit1 = rabbit1->next;
         rabbit2 = rabbit2->next;
+        if ( rabbit2->next == nullptr ) {
+            return false;
+        }
         rabbit2 = rabbit2->next;
         if ( rabbit1->data == rabbit2->data ) {
             return true;
@@ -69,9 +72,10 @@ bool List::check_ios() const {
 
 int main() {
     List lst;
-    for(int i = 0; i < 10; ++i) {
+    for(int i = 0; i < 15; ++i) {
         lst.insert(i);
     }
+    lst.insert(5);
     std::cout << lst.check_ios() << std::endl;
     lst.print();
     lst.cycle();
