@@ -1,0 +1,8 @@
+Create log file and write error in log file. In main.c situated unit_test.
+RUN:
+________________
+make -f makefile
+./main
+________________
+cat test.log
+
