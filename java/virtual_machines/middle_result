@@ -1,0 +1,161 @@
+Classfile /home/ravil/virtual_machines/Middle.class
+  Last modified 16 нояб. 2022 г.; size 678 bytes
+  MD5 checksum 4a2012e44cedab181fffe99a9873b8c0
+  Compiled from "Middle.java"
+public class Middle
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #22                         // Middle
+  super_class: #23                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #23.#35        // java/lang/Object."<init>":()V
+   #2 = Double             5.0d
+   #4 = Double             8.0d
+   #6 = Double             12.0d
+   #8 = Double             -18.0d
+  #10 = Double             -54.0d
+  #12 = Double             84.0d
+  #14 = Double             -35.0d
+  #16 = Double             17.0d
+  #18 = Double             37.0d
+  #20 = Fieldref           #36.#37        // java/lang/System.out:Ljava/io/PrintStream;
+  #21 = Methodref          #38.#39        // java/io/PrintStream.println:(D)V
+  #22 = Class              #40            // Middle
+  #23 = Class              #41            // java/lang/Object
+  #24 = Utf8               <init>
+  #25 = Utf8               ()V
+  #26 = Utf8               Code
+  #27 = Utf8               LineNumberTable
+  #28 = Utf8               main
+  #29 = Utf8               ([Ljava/lang/String;)V
+  #30 = Utf8               StackMapTable
+  #31 = Class              #42            // "[Ljava/lang/String;"
+  #32 = Class              #43            // "[D"
+  #33 = Utf8               SourceFile
+  #34 = Utf8               Middle.java
+  #35 = NameAndType        #24:#25        // "<init>":()V
+  #36 = Class              #44            // java/lang/System
+  #37 = NameAndType        #45:#46        // out:Ljava/io/PrintStream;
+  #38 = Class              #47            // java/io/PrintStream
+  #39 = NameAndType        #48:#49        // println:(D)V
+  #40 = Utf8               Middle
+  #41 = Utf8               java/lang/Object
+  #42 = Utf8               [Ljava/lang/String;
+  #43 = Utf8               [D
+  #44 = Utf8               java/lang/System
+  #45 = Utf8               out
+  #46 = Utf8               Ljava/io/PrintStream;
+  #47 = Utf8               java/io/PrintStream
+  #48 = Utf8               println
+  #49 = Utf8               (D)V
+{
+  public Middle();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=7, args_size=1
+         0: bipush        9
+         2: newarray       double
+         4: dup
+         5: iconst_0
+         6: ldc2_w        #2                  // double 5.0d
+         9: dastore
+        10: dup
+        11: iconst_1
+        12: ldc2_w        #4                  // double 8.0d
+        15: dastore
+        16: dup
+        17: iconst_2
+        18: ldc2_w        #6                  // double 12.0d
+        21: dastore
+        22: dup
+        23: iconst_3
+        24: ldc2_w        #8                  // double -18.0d
+        27: dastore
+        28: dup
+        29: iconst_4
+        30: ldc2_w        #10                 // double -54.0d
+        33: dastore
+        34: dup
+        35: iconst_5
+        36: ldc2_w        #12                 // double 84.0d
+        39: dastore
+        40: dup
+        41: bipush        6
+        43: ldc2_w        #14                 // double -35.0d
+        46: dastore
+        47: dup
+        48: bipush        7
+        50: ldc2_w        #16                 // double 17.0d
+        53: dastore
+        54: dup
+        55: bipush        8
+        57: ldc2_w        #18                 // double 37.0d
+        60: dastore
+        61: astore_1
+        62: dconst_0
+        63: dstore_2
+        64: aload_1
+        65: arraylength
+        66: ifle          111
+        69: dconst_0
+        70: dstore        4
+        72: iconst_0
+        73: istore        6
+        75: iload         6
+        77: aload_1
+        78: arraylength
+        79: if_icmpge     97
+        82: dload         4
+        84: aload_1
+        85: iload         6
+        87: daload
+        88: dadd
+        89: dstore        4
+        91: iinc          6, 1
+        94: goto          75
+        97: dload         4
+        99: aload_1
+       100: arraylength
+       101: i2d
+       102: ddiv
+       103: dstore_2
+       104: getstatic     #20                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       107: dload_2
+       108: invokevirtual #21                 // Method java/io/PrintStream.println:(D)V
+       111: return
+      LineNumberTable:
+        line 3: 0
+        line 4: 62
+        line 5: 64
+        line 6: 69
+        line 7: 72
+        line 8: 82
+        line 7: 91
+        line 10: 97
+        line 11: 104
+        line 13: 111
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 75
+          locals = [ class "[Ljava/lang/String;", class "[D", double, double, int ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 21
+        frame_type = 250 /* chop */
+          offset_delta = 13
+}
+SourceFile: "Middle.java"
